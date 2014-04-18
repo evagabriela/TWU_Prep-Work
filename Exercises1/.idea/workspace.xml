@@ -64,42 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EasiestExerciseEver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EasiestExerciseEver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawHorizontalLine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DrawHorizontalLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="21" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="555">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawVerticalLine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DrawVerticalLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="195" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawRightTriangle.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DrawRightTriangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IsoscelesTriangle.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IsoscelesTriangle.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,17 +85,30 @@
       <file leaf-file-name="DrawDiamondName.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DrawDiamondName.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="42" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0" vertical-offset="1213" max-vertical-offset="1860">
+            <state line="47" column="12" selection-start="1563" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1860">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FizzBuzz.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FizzBuzz.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.67233384" vertical-offset="0" max-vertical-offset="647">
+            <state line="29" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimeFactors.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PrimeFactors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="0" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.8145286" vertical-offset="148" max-vertical-offset="795">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1273#1282#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/DrawDiamond.java" />
         <option value="$PROJECT_DIR$/src/DrawDiamondName.java" />
         <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
+        <option value="$PROJECT_DIR$/src/PrimeFactors.java" />
       </list>
     </option>
   </component>
@@ -245,23 +223,7 @@
     <property name="SearchEverywhereHistory" value="" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
-  <component name="RunManager" selected="Application.FizzBuzz">
-    <configuration default="false" name="DrawRightTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DrawRightTriangle" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="5" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Exercises1" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.PrimeFactors">
     <configuration default="false" name="IsoscelesTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IsoscelesTriangle" />
       <option name="VM_PARAMETERS" value="" />
@@ -317,6 +279,22 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Exercises1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PrimeFactors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrimeFactors" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="30" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -463,19 +441,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DrawRightTriangle" />
-      <item index="1" class="java.lang.String" itemvalue="Application.IsoscelesTriangle" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DrawDiamond" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DrawDiamondName" />
-      <item index="4" class="java.lang.String" itemvalue="Application.FizzBuzz" />
+      <item index="0" class="java.lang.String" itemvalue="Application.IsoscelesTriangle" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DrawDiamond" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DrawDiamondName" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FizzBuzz" />
+      <item index="4" class="java.lang.String" itemvalue="Application.PrimeFactors" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.FizzBuzz" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DrawDiamondName" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DrawDiamond" />
-        <item index="3" class="java.lang.String" itemvalue="Application.IsoscelesTriangle" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DrawRightTriangle" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PrimeFactors" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FizzBuzz" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DrawDiamondName" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DrawDiamond" />
+        <item index="4" class="java.lang.String" itemvalue="Application.IsoscelesTriangle" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -682,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawDiamondName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0" vertical-offset="1213" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EasiestExerciseEver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
@@ -710,10 +681,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawDiamondName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="12" selection-start="1563" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.67233384" vertical-offset="0" max-vertical-offset="647">
+        <state line="29" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrimeFactors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.8145286" vertical-offset="148" max-vertical-offset="795">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1273#1282#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
