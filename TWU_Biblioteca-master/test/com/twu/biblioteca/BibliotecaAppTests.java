@@ -53,12 +53,18 @@ public class BibliotecaAppTests {
         assertThat(out.toString(), containsString("Menu"));
     }
 
-    //  All future options should be added to this menu also. A customer should be able to select from the menu
+//    Invalid Menu Option
     @Test
     public void ShouldSelectFromMenu(){
         bibliotecaApp.selectMenu("invalid");
         assertThat(out.toString(),containsString("Select a valid option!"));
+    }
 
+//    Quit
+    @Test
+    public void ShouldRespondToQuit(){
+        bibliotecaApp.selectMenu("Quit");
+        assertThat(out.toString(),containsString("Quit"));
     }
 }
 
