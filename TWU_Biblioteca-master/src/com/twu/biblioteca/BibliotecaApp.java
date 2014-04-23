@@ -24,4 +24,7 @@ public class BibliotecaApp {
     public void showMenu() {
         System.out.println("List of Books");
     }
+
+    public void mainMenu() {
+    }
 }

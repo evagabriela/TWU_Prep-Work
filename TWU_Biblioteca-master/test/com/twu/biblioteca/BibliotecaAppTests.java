@@ -45,12 +45,20 @@ public class BibliotecaAppTests {
     }
 
 //    Main Menu
-//    A customer  should see a list of options and be able to choose one
+    //    A customer  should see a list of options and be able to choose one
     @Test
     public void ShouldListOptions(){
         bibliotecaApp.showMenu();
 
         assertThat(out.toString(), containsString("List of Books"));
+    }
+
+    //  All future options should be added to this menu also. A customer should be able to select from the menu
+    @Test
+    public void ShouldSelectFromMenu(){
+        in = new ByteArrayInputStream("q".getBytes());
+        System.setIn(in);
+        bibliotecaApp.mainMenu();
     }
 
 
