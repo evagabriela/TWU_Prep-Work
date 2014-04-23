@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 
+import org.junit.Before;
 import org.junit.Test;
 
 
@@ -14,7 +15,7 @@ public class BibliotecaAppTests {
     BibliotecaApp bibliotecaApp;
     final ByteArrayOutputStream out = new ByteArrayOutputStream();
 
-
+    @Before
     public void setUp() throws Exception {
      System.setOut(new PrintStream(out));
      bibliotecaApp = new BibliotecaApp();
@@ -27,9 +28,15 @@ public class BibliotecaAppTests {
 //    Welcome Message
     @Test
     public void ShouldWelcomeWhenStartApplication() throws Exception {
-        System.setOut(new PrintStream(out));
-        bibliotecaApp = new BibliotecaApp();
         bibliotecaApp.getWelcomeMessage();
         assertThat(out.toString(), containsString("Welcome to the Biblioteca"));
     }
+
+//    List Books
+//    @Test
+//    public void ShouldListBooks(){
+//
+//    }
+
 }
+
