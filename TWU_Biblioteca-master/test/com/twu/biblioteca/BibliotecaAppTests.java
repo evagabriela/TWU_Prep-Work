@@ -6,14 +6,17 @@ import org.junit.Test;
 
 
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import java.io.*;
+import java.util.ArrayList;
 
 
 public class BibliotecaAppTests {
     BibliotecaApp bibliotecaApp;
     final ByteArrayOutputStream out = new ByteArrayOutputStream();
+    private ByteArrayInputStream in;
 
     @Before
     public void setUp() throws Exception {
@@ -33,10 +36,14 @@ public class BibliotecaAppTests {
     }
 
 //    List Books
-//    @Test
-//    public void ShouldListBooks(){
-//
-//    }
+    @Test
+    public void ShouldListBooks(){
+        ArrayList expectedList = new ArrayList<String>();
+
+        ArrayList listBooks = bibliotecaApp.getListOfBooks();
+        assertThat(listBooks, is(expectedList));
+
+    }
 
 }
 
