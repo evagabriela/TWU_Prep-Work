@@ -20,4 +20,7 @@ public class BibliotecaApp {
 //        Animal myPet = new Dog();
         return listOfBooks;
     }
+
+    public void showMenu() {
+    }
 }

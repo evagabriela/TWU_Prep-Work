@@ -42,8 +42,17 @@ public class BibliotecaAppTests {
 
         ArrayList listBooks = bibliotecaApp.getListOfBooks();
         assertThat(listBooks, is(expectedList));
-
     }
+
+//    Main Menu
+//    A customer  should see a list of options and be able to choose one
+    @Test
+    public void ShouldListOptions(){
+        bibliotecaApp.showMenu();
+
+        assertThat(out.toString(), containsString("List Books"));
+    }
+
 
 }
 
