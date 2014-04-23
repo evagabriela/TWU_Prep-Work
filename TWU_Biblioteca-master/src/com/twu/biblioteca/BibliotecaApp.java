@@ -32,8 +32,8 @@ public class BibliotecaApp {
         if (choice.equals("1")) {// View all books
             return "List of Books";
 
-        } if (choice.equals("q")){
-            System.out.println("Good Bye");
+        } if (choice.equals("Quit")){
+            System.out.println("Quit");
         } else{
             System.out.println("Select a valid option!!");
         }
