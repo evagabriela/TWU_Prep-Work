@@ -50,7 +50,7 @@ public class BibliotecaAppTests {
     public void ShouldListOptions(){
         bibliotecaApp.showMenu();
 
-        assertThat(out.toString(), containsString("List Books"));
+        assertThat(out.toString(), containsString("List of Books"));
     }
 
 
