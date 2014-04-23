@@ -50,17 +50,15 @@ public class BibliotecaAppTests {
     public void ShouldListOptions(){
         bibliotecaApp.showMenu();
 
-        assertThat(out.toString(), containsString("List of Books"));
+        assertThat(out.toString(), containsString("Menu"));
     }
 
     //  All future options should be added to this menu also. A customer should be able to select from the menu
     @Test
     public void ShouldSelectFromMenu(){
-        in = new ByteArrayInputStream("q".getBytes());
-        System.setIn(in);
-        bibliotecaApp.mainMenu();
+        bibliotecaApp.selectMenu("invalid");
+        assertThat(out.toString(),containsString("Select a valid option!"));
+
     }
-
-
 }
 

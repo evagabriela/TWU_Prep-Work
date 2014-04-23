@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class BibliotecaApp {
     private ArrayList listOfBooks = new ArrayList<String>();
@@ -22,9 +23,20 @@ public class BibliotecaApp {
     }
 
     public void showMenu() {
-        System.out.println("List of Books");
+        System.out.println("Menu");
     }
 
-    public void mainMenu() {
+
+    public String selectMenu(String choice) {
+
+        if (choice.equals("1")) {// View all books
+            return "List of Books";
+
+        } if (choice.equals("q")){
+            System.out.println("Good Bye");
+        } else{
+            System.out.println("Select a valid option!!");
+        }
+        return choice;
     }
 }
