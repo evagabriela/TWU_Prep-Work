@@ -98,6 +98,10 @@ public class BibliotecaAppTests {
     }
 
 
+//    List Movies - see a list of available movies. Movies have a name, year, director and movie rating (from 1-10 or unrated).
+
+
+
 }
 
 
