@@ -58,6 +58,8 @@ public class BibliotecaApp {
         return bookName;
     }
 
-    public void returnItem(String s) {
+    public void returnItem(String book) {
+        listOfBooks.add(book);
+        System.out.print("Return is confirmed ");
     }
 }

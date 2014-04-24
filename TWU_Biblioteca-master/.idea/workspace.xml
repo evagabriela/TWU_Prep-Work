@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da4c3394-d982-4bf2-8b9d-239e9e54eca8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java" />
-    </list>
+    <list default="true" id="da4c3394-d982-4bf2-8b9d-239e9e54eca8" name="Default" comment="" />
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,7 +85,7 @@
       <file leaf-file-name="BibliotecaApp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="26" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="1035">
+            <state line="65" column="0" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="1065">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,7 +96,7 @@
       <file leaf-file-name="BibliotecaAppTests.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.7705545" vertical-offset="1112" max-vertical-offset="1635">
+            <state line="102" column="0" selection-start="3103" selection-end="3103" vertical-scroll-proportion="1.3173996" vertical-offset="841" max-vertical-offset="1635">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,8 +119,8 @@
       <list>
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
       </list>
     </option>
   </component>
@@ -523,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="26" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="1035">
+        <state line="65" column="0" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="1065">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -532,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.7705545" vertical-offset="1112" max-vertical-offset="1635">
+        <state line="102" column="0" selection-start="3103" selection-end="3103" vertical-scroll-proportion="1.3173996" vertical-offset="841" max-vertical-offset="1635">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
