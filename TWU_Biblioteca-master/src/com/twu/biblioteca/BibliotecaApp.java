@@ -58,8 +58,18 @@ public class BibliotecaApp {
         return bookName;
     }
 
-    public void returnItem(String book) {
-        listOfBooks.add(book);
-        System.out.print("Thank you for returning the book.");
+    public String returnItem(String book) {
+//        listOfBooks.add(book);
+//        System.out.print("Thank you for returning the book.");
+        if (book.equals("Book 1")){
+            System.out.print("Thank you for returning the book.");
+        } if (book.equals("Book 2")){
+            System.out.print("Thank you for returning the book.");
+        } if (book.equals("Book 3")){
+            System.out.print("Thank you for returning the book.");
+        }
+        else System.out.print(("That is not a valid boot to return"));
+
+        return book;
     }
 }
