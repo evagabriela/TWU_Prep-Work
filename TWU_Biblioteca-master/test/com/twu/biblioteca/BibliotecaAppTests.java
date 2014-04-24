@@ -28,14 +28,12 @@ public class BibliotecaAppTests {
         System.setOut(null);
     }
 
-//    Welcome Message
     @Test
     public void ShouldWelcomeWhenStartApplication() throws Exception {
         bibliotecaApp.getWelcomeMessage();
         assertThat(out.toString(), containsString("Welcome to the Biblioteca"));
     }
 
-//    List Books
     @Test
     public void ShouldListBooks(){
         ArrayList expectedList = new ArrayList<String>();
@@ -46,8 +44,6 @@ public class BibliotecaAppTests {
         assertThat(listBooks, is(expectedList));
     }
 
-//    Main Menu
-    //    A customer  should see a list of options and be able to choose one
     @Test
     public void ShouldListOptions(){
         bibliotecaApp.showMenu();
@@ -55,25 +51,20 @@ public class BibliotecaAppTests {
         assertThat(out.toString(), containsString("Menu"));
     }
 
-//    Invalid Menu Option
+
     @Test
     public void ShouldSelectFromMenu(){
         bibliotecaApp.selectMenu("invalid");
         assertThat(out.toString(),containsString("Select a valid option!"));
     }
 
-//    Quit
     @Test
     public void ShouldRespondToQuit(){
         bibliotecaApp.selectMenu("Quit");
         assertThat(out.toString(),containsString("Quit"));
     }
 
-//    1.Checkout Book
-//As a librarian, I would like customers to be able to check-out a book. Checked out books should not appear in the list of all library books.
-//    ------------------------------------------
-//    2.Successful Checkout
-//    As a customer, I would like to know that a book has been checked out by seeing the message “Thank you! Enjoy the book”.
+
     @Test
     public void ShouldConfirmCheckoutBook(){
         bibliotecaApp.checkoutBook("Book 1");
@@ -81,27 +72,20 @@ public class BibliotecaAppTests {
         assertThat(out.toString(),containsString("Thank you! Enjoy the book"));
     }
 
-//    Unsuccessful Checkout
-//    be notified if the book I tried to check-out is not available by seeing the message, “That book is not available.”
     @Test
     public void ShouldBeNotifyIfUnsuccessfulCheckout(){
         bibliotecaApp.checkoutBook("Invalid");
         assertThat(out.toString(), containsString("That book is not available"));
     }
 
-//    Return Book
-//    return a book, so that other customers can check that book out. Returned books should appear in the list of library books.
-//    &
-//    Successful Return
-//    be notified if the book I am returning belongs to this library by seeing the message, “Thank you for returning the book.”, so that I know I returned the book to the right library.
+
     @Test
     public void ShouldReturnBook(){
         bibliotecaApp.returnItem("Book 3");
         assertThat(out.toString(), containsString("Thank you for returning the book."));
     }
 
-//    Unsuccessful Return
-//    be notified if the book I am returning has not been added to this library by seeing the message, “That is not a valid book to return.”
+
     @Test
     public void ShouldBeNotifyIfUnsuccesfulReturn(){
         bibliotecaApp.returnItem("Invalid Book");

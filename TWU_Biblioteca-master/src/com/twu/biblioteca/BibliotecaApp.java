@@ -22,7 +22,6 @@ public class BibliotecaApp {
     }
 
     public ArrayList getListOfBooks() {
-//        Animal myPet = new Dog();
         listOfBooks.add("Book 1");
         listOfBooks.add("Book 2");
         return listOfBooks;
@@ -35,7 +34,7 @@ public class BibliotecaApp {
 
     public String selectMenu(String choice) {
 
-        if (choice.equals("1")) {// View all books
+        if (choice.equals("1")) {
             return "List of Books";
 
         } if (choice.equals("Quit")){
@@ -59,8 +58,7 @@ public class BibliotecaApp {
     }
 
     public String returnItem(String book) {
-//        listOfBooks.add(book);
-//        System.out.print("Thank you for returning the book.");
+
         if (book.equals("Book 1")){
             System.out.print("Thank you for returning the book.");
         } if (book.equals("Book 2")){
