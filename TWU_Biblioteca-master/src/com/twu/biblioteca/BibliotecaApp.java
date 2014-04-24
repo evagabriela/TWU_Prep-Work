@@ -57,4 +57,7 @@ public class BibliotecaApp {
         }
         return bookName;
     }
+
+    public void returnItem(String s) {
+    }
 }

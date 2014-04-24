@@ -88,6 +88,15 @@ public class BibliotecaAppTests {
         bibliotecaApp.checkoutBook("Invalid");
         assertThat(out.toString(), containsString("That book is not available"));
     }
+
+//    Return Book
+//    return a book, so that other customers can check that book out. Returned books should appear in the list of library books.
+    @Test
+    public void ShouldReturnBook(){
+        bibliotecaApp.returnItem("Book 3");
+        assertThat(out.toString(), containsString("Return is confirmed "));
+    }
+
 }
 
 
