@@ -40,6 +40,7 @@ public class BibliotecaApp {
         return choice;
     }
 
-    public void checkoutBook(String s) {
+    public void checkoutBook(String message) {
+        System.out.print("Checkout Completed!");
     }
 }
