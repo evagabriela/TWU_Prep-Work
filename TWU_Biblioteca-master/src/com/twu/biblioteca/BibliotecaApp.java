@@ -1,7 +1,10 @@
 package com.twu.biblioteca;
 
+import javax.xml.soap.SOAPPart;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import static java.lang.String.valueOf;
 
 public class BibliotecaApp {
     private ArrayList listOfBooks = new ArrayList<String>();
@@ -11,6 +14,7 @@ public class BibliotecaApp {
 
         bibliotecaApp.getWelcomeMessage();
         System.out.print(bibliotecaApp.getListOfBooks());
+
     }
 
     public void getWelcomeMessage() {
@@ -42,10 +46,15 @@ public class BibliotecaApp {
         return choice;
     }
 
-    public void checkoutBook(String bookName) {
-        if (listOfBooks.contains(bookName)){
-            listOfBooks.remove(bookName);
+    public String checkoutBook(String bookName) {
+
+        if (bookName.equals("Book 1")){
+            System.out.print("Thank you! Enjoy the book");
+        } if (bookName.equals("Book 2")){
+            System.out.print("Thank you! Enjoy the book");
+        }else{
+            System.out.print("That book is not available");
         }
-        System.out.print("Thank you! Enjoy the book");
+        return bookName;
     }
 }

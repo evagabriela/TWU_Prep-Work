@@ -77,6 +77,7 @@ public class BibliotecaAppTests {
     @Test
     public void ShouldConfirmCheckoutBook(){
         bibliotecaApp.checkoutBook("Book 1");
+
         assertThat(out.toString(),containsString("Thank you! Enjoy the book"));
     }
 
@@ -84,10 +85,9 @@ public class BibliotecaAppTests {
 //    be notified if the book I tried to check-out is not available by seeing the message, “That book is not available.”
     @Test
     public void ShouldBeNotifyIfUnsuccessfulCheckout(){
-        bibliotecaApp.checkoutBook("InvalidBook");
-        assertThat(out.toString(), containsString("“That book is not available.”"));
+        bibliotecaApp.checkoutBook("Invalid");
+        assertThat(out.toString(), containsString("That book is not available"));
     }
-
 }
 
 
