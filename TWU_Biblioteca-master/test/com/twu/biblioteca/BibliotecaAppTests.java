@@ -68,21 +68,18 @@ public class BibliotecaAppTests {
         bibliotecaApp.selectMenu("Quit");
         assertThat(out.toString(),containsString("Quit"));
     }
-//    Checkout Book
-//As a librarian, I would like customers to be able to check-out a book. Checked out books should not appear in the list of all library books.
-    @Test
-    public void ShouldCheckoutBook(){
-        bibliotecaApp.checkoutBook("Book 1");
-        assertThat(out.toString(),containsString("Checkout Completed!"));
-    }
 
-//    Successful Checkout
+//    1.Checkout Book
+//As a librarian, I would like customers to be able to check-out a book. Checked out books should not appear in the list of all library books.
+//    ------------------------------------------
+//    2.Successful Checkout
 //    As a customer, I would like to know that a book has been checked out by seeing the message “Thank you! Enjoy the book”.
     @Test
-    public void ShouldConfirmCheckoutByAMessage(){
-        bibliotecaApp.checkoutBook("Book2");
+    public void ShouldConfirmCheckoutBook(){
+        bibliotecaApp.checkoutBook("Book 1");
         assertThat(out.toString(),containsString("Thank you! Enjoy the book"));
     }
-
 }
+
+
 

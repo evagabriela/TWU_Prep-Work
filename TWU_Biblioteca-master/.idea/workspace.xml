@@ -96,7 +96,7 @@
       <file leaf-file-name="BibliotecaAppTests.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.82791585" vertical-offset="887" max-vertical-offset="1410">
+            <state line="82" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="1.2600383" vertical-offset="571" max-vertical-offset="1365">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +119,8 @@
       <list>
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java" />
       </list>
     </option>
   </component>
@@ -529,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.82791585" vertical-offset="887" max-vertical-offset="1410">
+        <state line="82" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="1.2600383" vertical-offset="571" max-vertical-offset="1365">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
