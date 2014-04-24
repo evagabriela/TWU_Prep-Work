@@ -146,6 +146,13 @@ public class BibliotecaApp {
         return bookName;
     }
 
-    public void checkoutMovie(String shrek) {
+    public void checkoutMovie(String movieName) {
+//addMovie(new Movie("Shrek", "Andrew Adamson", 0));
+        if (movies.contains(movieName)){
+
+            System.out.print("Thank you! Enjoy the movie");
+        } else {
+            System.out.print("That movie is not available");
+        }
     }
 }

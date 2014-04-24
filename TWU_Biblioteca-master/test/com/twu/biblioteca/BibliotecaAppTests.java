@@ -112,8 +112,9 @@ public class BibliotecaAppTests {
 //    Check-out Movie -  check out a movie from the library.
     @Test
     public void ShouldConfirmCheckoutMovie(){
-        bibliotecaApp.checkoutMovie("Shrek");
-        assertThat(out.toString(), containsString("Thank you! Enjoy the movie"));
+
+        bibliotecaApp.checkoutMovie("Invalid Movie");
+        assertThat(out.toString(), containsString("That movie is not available"));
     }
 
 
