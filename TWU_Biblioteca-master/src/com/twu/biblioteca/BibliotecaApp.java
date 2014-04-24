@@ -60,6 +60,6 @@ public class BibliotecaApp {
 
     public void returnItem(String book) {
         listOfBooks.add(book);
-        System.out.print("Return is confirmed ");
+        System.out.print("Thank you for returning the book.");
     }
 }
