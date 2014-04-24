@@ -100,6 +100,14 @@ public class BibliotecaAppTests {
         assertThat(out.toString(), containsString("Thank you for returning the book."));
     }
 
+//    Unsuccessful Return
+//    be notified if the book I am returning has not been added to this library by seeing the message, “That is not a valid book to return.”
+    @Test
+    public void ShouldBeNotifyIfUnsuccesfulReturn(){
+        bibliotecaApp.returnItem("Invalid Book");
+        assertThat(out.toString(), containsString("That is not a valid boot to return"));
+    }
+
 
 
 
