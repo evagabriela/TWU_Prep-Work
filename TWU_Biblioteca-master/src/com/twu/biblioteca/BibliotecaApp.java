@@ -145,4 +145,7 @@ public class BibliotecaApp {
 
         return bookName;
     }
+
+    public void checkoutMovie(String shrek) {
+    }
 }

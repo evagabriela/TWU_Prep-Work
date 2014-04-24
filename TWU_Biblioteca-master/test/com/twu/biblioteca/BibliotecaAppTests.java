@@ -109,6 +109,13 @@ public class BibliotecaAppTests {
         assertThat(out.toString(), containsString("Andrew Adamson"));
     }
 
+//    Check-out Movie -  check out a movie from the library.
+    @Test
+    public void ShouldConfirmCheckoutMovie(){
+        bibliotecaApp.checkoutMovie("Shrek");
+        assertThat(out.toString(), containsString("Thank you! Enjoy the movie"));
+    }
+
 
 }
 
