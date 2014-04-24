@@ -15,7 +15,7 @@ public class Movie {
 
     public Movie(String title, String director, int rating) {
         this(title, director);
-        this.rating = rating;
+        setRating(rating);
     }
 
     public int getRating() {

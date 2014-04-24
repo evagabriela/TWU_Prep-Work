@@ -26,6 +26,9 @@ public class BibliotecaAppTests {
 
         Book book = new Book("Running with the Giants" ,"John Maxwell");
         bibliotecaApp.addBook(book);
+
+        bibliotecaApp.addMovie(new Movie("Shrek", "Andrew Adamson"));
+
     }
 
     @After
@@ -99,7 +102,12 @@ public class BibliotecaAppTests {
 
 
 //    List Movies - see a list of available movies. Movies have a name, year, director and movie rating (from 1-10 or unrated).
-
+    @Test
+    public void showAllMovies(){
+        bibliotecaApp.showAllMovies();
+        assertThat(out.toString(), containsString("Shrek"));
+        assertThat(out.toString(), containsString("Andrew Adamson"));
+    }
 
 
 }

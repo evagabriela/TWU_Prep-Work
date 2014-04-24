@@ -8,6 +8,7 @@ import static java.lang.String.valueOf;
 
 public class BibliotecaApp {
     private ArrayList<Book> listOfBooks = new ArrayList<Book>();
+    private ArrayList<Movie> movies = new ArrayList<Movie>();
 
     public static void main(String[] args) {
         BibliotecaApp bibliotecaApp = new BibliotecaApp();
@@ -26,10 +27,16 @@ public class BibliotecaApp {
 
         addBook(book1);
         addBook(book2);
+
+        addMovie(new Movie("Shrek", "Andrew Adamson", 0));
     }
 
     public void addBook(Book book){
         listOfBooks.add(book);
+    }
+
+    public void addMovie(Movie movie) {
+        movies.add(movie);
     }
     public Book getBook(int index){
         return listOfBooks.get(index - 1);
@@ -52,6 +59,7 @@ public class BibliotecaApp {
         System.out.println("1. View all Books");
         System.out.println("2. Checkout a Book");
         System.out.println("3. Return a Book");
+        System.out.println("4. View all movies");
         System.out.println("Quit");
         System.out.println("Select an option");
     }
@@ -80,6 +88,8 @@ public class BibliotecaApp {
             int bookNumber = getNumberInput();
             checkoutBook(bookNumber);
 
+        } if (option.equals("4")){
+            showAllMovies();
         } if (option.equals("Quit")) {// Quit
             System.out.println("Quit");
         } else{
@@ -87,7 +97,18 @@ public class BibliotecaApp {
         }
     }
 
-
+    public void showAllMovies(){
+        int index = 1;
+        for (Movie movie : movies) {
+            System.out.print(index + "; " + movie.getTitle() + " | " + movie.getDirector());
+            if (movie.getRating() < 1){
+                System.out.println("N/A");
+            }else{
+                System.out.println(movie.getRating());
+                index++;
+            }
+        }
+    }
 
     private int getNumberInput(){
         Scanner in = new Scanner(System.in);
