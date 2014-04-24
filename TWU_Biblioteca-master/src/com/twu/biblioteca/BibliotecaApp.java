@@ -39,4 +39,7 @@ public class BibliotecaApp {
         }
         return choice;
     }
+
+    public void checkoutBook(String s) {
+    }
 }

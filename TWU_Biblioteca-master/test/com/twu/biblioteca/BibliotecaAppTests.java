@@ -66,5 +66,12 @@ public class BibliotecaAppTests {
         bibliotecaApp.selectMenu("Quit");
         assertThat(out.toString(),containsString("Quit"));
     }
+//    Checkout Book
+//As a librarian, I would like customers to be able to check-out a book. Checked out books should not appear in the list of all library books.
+    @Test
+    public void ShouldCheckoutBook(){
+        bibliotecaApp.checkoutBook("Book 1");
+        assertThat(out.toString(),containsString("Checkout Completed!"));
+    }
 }
 
