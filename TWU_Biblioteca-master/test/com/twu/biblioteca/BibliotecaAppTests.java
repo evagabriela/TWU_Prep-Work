@@ -78,7 +78,11 @@ public class BibliotecaAppTests {
 
 //    Successful Checkout
 //    As a customer, I would like to know that a book has been checked out by seeing the message “Thank you! Enjoy the book”.
-
+    @Test
+    public void ShouldConfirmCheckoutByAMessage(){
+        bibliotecaApp.checkoutBook("Book2");
+        assertThat(out.toString(),containsString("Thank you! Enjoy the book"));
+    }
 
 }
 
