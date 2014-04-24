@@ -19,6 +19,8 @@ public class BibliotecaApp {
 
     public ArrayList getListOfBooks() {
 //        Animal myPet = new Dog();
+        listOfBooks.add("Book 1");
+        listOfBooks.add("Book 2");
         return listOfBooks;
     }
 
@@ -40,7 +42,10 @@ public class BibliotecaApp {
         return choice;
     }
 
-    public void checkoutBook(String message) {
+    public void checkoutBook(String bookName) {
+        if (listOfBooks.contains(bookName)){
+            listOfBooks.remove(bookName);
+        }
         System.out.print("Checkout Completed!");
     }
 }

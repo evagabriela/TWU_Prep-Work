@@ -39,6 +39,8 @@ public class BibliotecaAppTests {
     @Test
     public void ShouldListBooks(){
         ArrayList expectedList = new ArrayList<String>();
+        expectedList.add("Book 1");
+        expectedList.add("Book 2");
 
         ArrayList listBooks = bibliotecaApp.getListOfBooks();
         assertThat(listBooks, is(expectedList));
@@ -73,5 +75,10 @@ public class BibliotecaAppTests {
         bibliotecaApp.checkoutBook("Book 1");
         assertThat(out.toString(),containsString("Checkout Completed!"));
     }
+
+//    Successful Checkout
+//    As a customer, I would like to know that a book has been checked out by seeing the message “Thank you! Enjoy the book”.
+
+
 }
 
