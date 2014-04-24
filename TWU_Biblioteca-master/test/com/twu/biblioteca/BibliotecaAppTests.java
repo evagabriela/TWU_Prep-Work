@@ -91,11 +91,17 @@ public class BibliotecaAppTests {
 
 //    Return Book
 //    return a book, so that other customers can check that book out. Returned books should appear in the list of library books.
+//    &
+//    Successful Return
+//    be notified if the book I am returning belongs to this library by seeing the message, “Thank you for returning the book.”, so that I know I returned the book to the right library.
     @Test
     public void ShouldReturnBook(){
         bibliotecaApp.returnItem("Book 3");
-        assertThat(out.toString(), containsString("Return is confirmed "));
+        assertThat(out.toString(), containsString("Thank you for returning the book."));
     }
+
+
+
 
 }
 
