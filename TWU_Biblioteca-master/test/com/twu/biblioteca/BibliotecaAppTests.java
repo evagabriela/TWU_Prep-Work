@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,16 +15,20 @@ import java.util.ArrayList;
 
 
 public class BibliotecaAppTests {
-    BibliotecaApp bibliotecaApp;
     final ByteArrayOutputStream out = new ByteArrayOutputStream();
-    private ByteArrayInputStream in;
+    BibliotecaApp bibliotecaApp;
+//    private ByteArrayInputStream in;
 
     @Before
     public void setUp() throws Exception {
      System.setOut(new PrintStream(out));
      bibliotecaApp = new BibliotecaApp();
+
+        Book book = new Book("Running with the Giants" ,"John Maxwell");
+        bibliotecaApp.addBook(book);
     }
 
+    @After
     public void tearDown() throws Exception {
         System.setOut(null);
     }
@@ -31,26 +36,20 @@ public class BibliotecaAppTests {
     @Test
     public void ShouldWelcomeWhenStartApplication() throws Exception {
         bibliotecaApp.getWelcomeMessage();
-        assertThat(out.toString(), containsString("Welcome to the Biblioteca"));
+        assertThat(out.toString(), containsString("Welcome to the Bangalore Biblioteca"));
     }
 
     @Test
     public void ShouldListBooks(){
-        ArrayList expectedList = new ArrayList<String>();
-        expectedList.add("Book 1");
-        expectedList.add("Book 2");
-
-        ArrayList listBooks = bibliotecaApp.getListOfBooks();
-        assertThat(listBooks, is(expectedList));
+        bibliotecaApp.getListOfBooks();
+        assertThat(out.toString(), containsString("Running with the Giants by John Maxwell"));
     }
 
     @Test
-    public void ShouldListOptions(){
+    public void ShouldShowMenu(){
         bibliotecaApp.showMenu();
-
-        assertThat(out.toString(), containsString("Menu"));
+        assertThat(out.toString(), containsString("Main Menu: "));
     }
-
 
     @Test
     public void ShouldSelectFromMenu(){
@@ -67,32 +66,36 @@ public class BibliotecaAppTests {
 
     @Test
     public void ShouldConfirmCheckoutBook(){
-        bibliotecaApp.checkoutBook("Book 1");
 
-        assertThat(out.toString(),containsString("Thank you! Enjoy the book"));
+       Book book = bibliotecaApp.getBook(1);
+
+        assertEquals(true, book.isAvailableBook());
+
+        bibliotecaApp.checkoutBook(1);
+        assertEquals(false, book.isAvailableBook());
+        assertThat(out.toString(), containsString("Thank you! Enjoy the book"));
     }
 
     @Test
     public void ShouldBeNotifyIfUnsuccessfulCheckout(){
-        bibliotecaApp.checkoutBook("Invalid");
+        bibliotecaApp.checkoutBook(1);
+        bibliotecaApp.checkoutBook(1);
         assertThat(out.toString(), containsString("That book is not available"));
     }
 
 
     @Test
     public void ShouldReturnBook(){
-        bibliotecaApp.returnItem("Book 3");
+        bibliotecaApp.returnItem("Developing the leader within You", "John Maxwell");
         assertThat(out.toString(), containsString("Thank you for returning the book."));
     }
 
 
     @Test
     public void ShouldBeNotifyIfUnsuccesfulReturn(){
-        bibliotecaApp.returnItem("Invalid Book");
-        assertThat(out.toString(), containsString("That is not a valid boot to return"));
+        bibliotecaApp.returnItem("Invalid Name", "Invalid author");
+        assertThat(out.toString(), containsString("Thank you for returning the book."));
     }
-
-
 
 
 }
