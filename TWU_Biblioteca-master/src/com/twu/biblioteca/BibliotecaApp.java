@@ -46,6 +46,6 @@ public class BibliotecaApp {
         if (listOfBooks.contains(bookName)){
             listOfBooks.remove(bookName);
         }
-        System.out.print("Checkout Completed!");
+        System.out.print("Thank you! Enjoy the book");
     }
 }
