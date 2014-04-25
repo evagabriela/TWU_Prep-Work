@@ -157,6 +157,11 @@ public class BibliotecaApp {
     }
 
     public void checkLibraryNumber(int libraryNumber) {
-        System.out.print("Please contact the library. Thank you");
+        if (libraryNumber == 000-0001 || libraryNumber == 000-0002 || libraryNumber == 000-0003 ){
+            System.out.print("Welcome to the library");
+        } else {
+            System.out.print("Please contact the library. Thank you");
+        }
+
     }
 }

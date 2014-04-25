@@ -133,8 +133,8 @@ public class BibliotecaAppTests {
 
     @Test
     public void ShouldCheckLibraryNumber(){
-        bibliotecaApp.checkLibraryNumber(123-4567);
-        assertThat(out.toString(), containsString("Please contact the library. Thank you"));
+        bibliotecaApp.checkLibraryNumber(000-0001);
+        assertThat(out.toString(), containsString("Welcome to the library"));
     }
 
 }
