@@ -1,4 +1,4 @@
-# BiBlioteca Database Questions and Answers
+# Biblioteca Database Questions and Answers
 
 ## Who checked out the book ‘The Hobbit’?
 ### Answer:
@@ -48,7 +48,7 @@ SELECT title FROM book
     WHERE movie_id IS NOT NULL);
 
 
-## Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. Use your query from question 1 to verify that you have checked it out. Also, provide the SQL used to update the database.
+### Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. Use your query from question 1 to verify that you have checked it out. Also, provide the SQL used to update the database.
 ### Query for add the book 'The Pragmatic Programmer':
       INSERT INTO book (title)
       VALUES ('Pragmatic Programmer');
