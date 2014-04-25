@@ -1,7 +1,7 @@
 package com.twu.biblioteca;
 
 
-import org.hamcrest.Matcher;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -116,9 +116,6 @@ public class BibliotecaAppTests {
         assertThat(out.toString(), containsString("That movie is not available"));
     }
 //      User Accounts - Login: As a librarian, I want to know who has checked out a book.
-//          Users must now login using their library number (which is in the format xxx-xxxx)
-//          and a password in order to check-out and return books.
-//          User credentials are predefined, so registering new users is not part of this story.
     @Test
     public void login(){
         User gaby = new User("Gaby", "12345", "email", "1234133");
@@ -145,9 +142,6 @@ public class BibliotecaAppTests {
     }
 
 //    User Accounts - User information - As a customer, I want to be able to see my user information
-// (name, email address and phone number), so that I know that the library can contact me.
-// This option should only be available when the customer is logged in and should only display that customer’s information.
-
     @Test
     public void CheckUserEmail(){
         User gaby = new User("Gaby", "12345", "gaby@email", "1234133");

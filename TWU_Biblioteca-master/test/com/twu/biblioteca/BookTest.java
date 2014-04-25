@@ -1,9 +1,8 @@
 package com.twu.biblioteca;
 
-import junit.framework.Assert;
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertEquals;
+
 
 /**
  * Created by evazamudio on 2014-04-24.
