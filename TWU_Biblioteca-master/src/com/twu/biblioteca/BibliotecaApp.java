@@ -165,11 +165,11 @@ public class BibliotecaApp {
         }
     }
 
-    public void checkLibraryNumber(int libraryNumber) {
+    public void checkLibraryNumber() {
         if (UserLoggedIn()){
             System.out.println("Your library number is " + getCurrentUser().getLibraryNumber());
         } else{
-            System.out.println("Please contact the Librarian. Thank you");
+            System.out.println("Please talk to Librarian. Thank you");
         }
 
     }

@@ -137,6 +137,17 @@ public class BibliotecaAppTests {
         assertThat(out.toString(), containsString("Invalid username or password"));
     }
 
+    @Test
+    public void CheckLibraryNumber() {
+        bibliotecaApp.checkLibraryNumber();
+        assertThat(out.toString(), containsString("Please talk to Librarian. Thank you"));
+
+    }
+
+//    User Accounts - User information - As a customer, I want to be able to see my user information
+// (name, email address and phone number), so that I know that the library can contact me.
+// This option should only be available when the customer is logged in and should only display that customer’s information.
+
 
 }
 
