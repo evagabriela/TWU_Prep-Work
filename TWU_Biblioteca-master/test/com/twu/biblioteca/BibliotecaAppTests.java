@@ -116,7 +116,26 @@ public class BibliotecaAppTests {
         bibliotecaApp.checkoutMovie("Invalid Movie");
         assertThat(out.toString(), containsString("That movie is not available"));
     }
+//      User Accounts - Login: As a librarian, I want to know who has checked out a book.
+//          Users must now login using their library number (which is in the format xxx-xxxx)
+//          and a password in order to check-out and return books.
+//          User credentials are predefined, so registering new users is not part of this story.
+//    @Test
+//    public void login(){
+//        User gaby = new User("Gaby", "1234");
+//
+//        bibliotecaApp.login("gaby", "wrong_password");
+//
+//        assertEquals(null, bibliotecaApp.getUser());
+//        assertThat(out.toString(), containsString("Invalid username or passworld"));
+//
+//    }
 
+    @Test
+    public void ShouldCheckLibraryNumber(){
+        bibliotecaApp.checkLibraryNumber(123-4567);
+        assertThat(out.toString(), containsString("Please contact the library. Thank you"));
+    }
 
 }
 

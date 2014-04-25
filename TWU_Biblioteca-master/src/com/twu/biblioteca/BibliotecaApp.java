@@ -155,4 +155,8 @@ public class BibliotecaApp {
             System.out.print("That movie is not available");
         }
     }
+
+    public void checkLibraryNumber(int libraryNumber) {
+        System.out.print("Please contact the library. Thank you");
+    }
 }
