@@ -31,9 +31,9 @@ public class BibliotecaApp {
 
         addMovie(new Movie("Shrek", "Andrew Adamson", 0));
 
-        new User("Gaby", "1234");
-        new User("Keith", "12345");
-        new User("Eva", "123456");
+        new User("Gaby", "1234", "email", "124343");
+        new User("Keith", "12345", "email1", "123124124");
+        new User("Eva", "123456", "email", "31343434");
     }
 
     public void addBook(Book book){

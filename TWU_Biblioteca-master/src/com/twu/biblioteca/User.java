@@ -10,6 +10,8 @@ public class User {
 
     private String username;
     private String password;
+    private String email;
+    private String phoneNumber;
     private int libraryNumber;
 
     public static User authenticate(String username, String password){
@@ -21,9 +23,11 @@ public class User {
         return null;
     }
 
-    public User(String username, String password){
+    public User(String username, String password, String email, String phoneNumber){
         this.username = username;
         this.password = password;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
         this.libraryNumber = nextLibraryNumber++;
         users.add(this);
     }
@@ -38,6 +42,14 @@ public class User {
 
     private boolean checkPassword(String pass) {
         return password.equals(pass);
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public String getPhoneNumber(){
+        return phoneNumber;
     }
 
     public static void cleanUp() {
