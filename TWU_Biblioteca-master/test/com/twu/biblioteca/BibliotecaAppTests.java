@@ -157,7 +157,14 @@ public class BibliotecaAppTests {
 
     }
 
+    @Test
+    public void CheckUserPhoneNumber(){
+        User gaby = new User("Gaby", "12345", "gaby@email", "614-123 5877");
+        String email = gaby.getPhoneNumber();
 
+        assertEquals(gaby.getPhoneNumber(), "614-123 5877");
+
+    }
 
 
 }
