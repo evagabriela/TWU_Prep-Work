@@ -1,17 +1,16 @@
 package com.twu.biblioteca;
 
 
+import org.hamcrest.Matcher;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import java.io.*;
-import java.util.ArrayList;
 
 
 public class BibliotecaAppTests {
@@ -120,22 +119,24 @@ public class BibliotecaAppTests {
 //          Users must now login using their library number (which is in the format xxx-xxxx)
 //          and a password in order to check-out and return books.
 //          User credentials are predefined, so registering new users is not part of this story.
-//    @Test
-//    public void login(){
-//        User gaby = new User("Gaby", "1234");
-//
-//        bibliotecaApp.login("gaby", "wrong_password");
-//
-//        assertEquals(null, bibliotecaApp.getUser());
-//        assertThat(out.toString(), containsString("Invalid username or passworld"));
-//
-//    }
+    @Test
+    public void login(){
+        User gaby = new User("Gaby", "12345");
+
+        bibliotecaApp.login("Gaby", "12345");
+
+        assert gaby == bibliotecaApp.getCurrentUser();
+    }
 
     @Test
     public void ShouldCheckLibraryNumber(){
-        bibliotecaApp.checkLibraryNumber(000-0001);
-        assertThat(out.toString(), containsString("Welcome to the library"));
+        User gaby = new User("Gaby","12345" );
+        bibliotecaApp.login("gaby", "wrong_password");
+
+        assertEquals(null, bibliotecaApp.getCurrentUser());
+        assertThat(out.toString(), containsString("Invalid username or password"));
     }
+
 
 }
 

@@ -9,6 +9,7 @@ import static java.lang.String.valueOf;
 public class BibliotecaApp {
     private ArrayList<Book> listOfBooks = new ArrayList<Book>();
     private ArrayList<Movie> movies = new ArrayList<Movie>();
+    private User currentUser;
 
     public static void main(String[] args) {
         BibliotecaApp bibliotecaApp = new BibliotecaApp();
@@ -29,6 +30,10 @@ public class BibliotecaApp {
         addBook(book2);
 
         addMovie(new Movie("Shrek", "Andrew Adamson", 0));
+
+        new User("Gaby", "1234");
+        new User("Keith", "12345");
+        new User("Eva", "123456");
     }
 
     public void addBook(Book book){
@@ -52,6 +57,10 @@ public class BibliotecaApp {
             System.out.println( book.getTitle() + " by " + book.getAuthor());
             index ++;
         }
+    }
+
+    public User getCurrentUser() {
+        return currentUser;
     }
 
     public void showMenu() {
@@ -157,11 +166,25 @@ public class BibliotecaApp {
     }
 
     public void checkLibraryNumber(int libraryNumber) {
-        if (libraryNumber == 000-0001 || libraryNumber == 000-0002 || libraryNumber == 000-0003 ){
-            System.out.print("Welcome to the library");
-        } else {
-            System.out.print("Please contact the library. Thank you");
+        if (UserLoggedIn()){
+            System.out.println("Your library number is " + getCurrentUser().getLibraryNumber());
+        } else{
+            System.out.println("Please contact the Librarian. Thank you");
         }
 
     }
+
+    public void login(String userName, String password) {
+        currentUser = User.authenticate(userName, password);
+        if (!UserLoggedIn()){
+            System.out.print("Invalid username or password");
+        }
+    }
+
+    private boolean UserLoggedIn(){
+        return !(currentUser == null);
+    }
+
+
+
 }
